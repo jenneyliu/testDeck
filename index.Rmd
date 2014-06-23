@@ -13,6 +13,7 @@ knit        : slidify::knit2slides
 ---
 
 
+
 <br/>
 <br/>
 ## <font size="10"> Are you in good shape?  </font>
@@ -31,8 +32,8 @@ knit        : slidify::knit2slides
 <br/>
 <font size="5"> How much should I weigh for my height? </font>
 
---- .class #id 
 
+--- .class #id 
 
 
 ## Body Mass Index (BMI)
@@ -114,12 +115,16 @@ Body Mass Index (BMI) Calculator is a shiny application. After you enter your we
 <a href="https://jenneyliu.shinyapps.io/Project/" target="_blank">BodyMassIndex (BMI) Calculator</a>
 
 <br/>
-2. The link to Supporting Documentation:
+2. The link to the Supporting Documentation:
 <a href="https://jenneyliu.shinyapps.io/Project/readme.html" target="_blank">Supporting Documentation</a>
 
 <br/>
 <br/>
 <font size="6"> Stay in shape,  stay healthy! </font>
+
+
+
+
 
 
 

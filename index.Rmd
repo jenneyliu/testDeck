@@ -164,11 +164,6 @@ Body Mass Index (BMI) Calculator is a shiny application. After you enter your we
 <br/>
 <font size="6"> Stay in shape,  stay healthy! </font>
 
----
-
-
-
-## interactive BMI
 
 
 

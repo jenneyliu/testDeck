@@ -22,9 +22,8 @@ mode        : selfcontained # {standalone, draft}
 
 
 ```r
-plot(1:10, 1:10)
+plot(1 : 10, 1 : 10)
 ```
 
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
-
 

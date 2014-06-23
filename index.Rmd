@@ -81,7 +81,7 @@ knit        : slidify::knit2slides
 
 
 
-## An exmaple
+## An example
 
 <br/>
 <br/>

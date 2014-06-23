@@ -1,6 +1,6 @@
 ---
-title       : Slidify
-subtitle    : Data meets presentation
+title       : Body Mass Index (BMI) Calculator
+subtitle    : A shiny application
 author      : Jenny Liu
 job         : Data Scintist
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -12,15 +12,114 @@ knit        : slidify::knit2slides
 
 ---
 
-## Read-And-Delete
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+<br/>
+<br/>
+## <font size="10"> Are you in good shape?  </font>
+<br/>
+<br/>
+
+<font size="4.5"> Some most common questions about weight: </font>
+
+
+<br/>
+<font size="5"> Should I lose weight? </font>
+
+<br/>
+<font size="5"> Is my weight ideal? </font>
+
+<br/>
+<font size="5"> How much should I weigh for my height? </font>
 
 --- .class #id 
 
-## Slide 2
+
+
+## Body Mass Index (BMI)
+
+<br/>
+### What is BMI
+1. Your BMI is a measure that relates your weight to your height. 
+2. To calculate BMI, divide your weight (kilograms) by the square of your height (meters).
+
+
+
+### Interpretation of BMI
+
+
+<table style="width:400px; boder:1px; margin-top:0.3cm; padding-top:0.3cm; font-size=4">
+<tr>
+  <td> BMI &#x2264 18.5 </td>
+  <td> Underweight</td>  
+</tr>
+
+<tr>
+  <td>18.5 < BMI &#x2264 25</td>
+  <td> Ideal</td>  
+</tr>
+
+<tr>
+  <td>25 < BMI &#x2264 30 </td>
+  <td> Overweight</td>  
+</tr>
+
+<tr>
+  <td> 30 < BMI </td>
+  <td> Obese</td>  
+</tr>
+</table>
+
+
+
+
+
+
+
+
+---
+
+
+
+## An exmaple
+
+<br/>
+<br/>
+
+For example, if your weight is 80 kilograms and your height is 1.8 meters, then
+```{r}
+weight <- 80
+height <- 1.8 
+BMI <- weight / (height^2)
+BMI
+```
+
+
+<br/>
+
+Since the BMI < 25, you have ideal weight given the height.
+
+
+
+
+---
+
+
+## Body Mass Index (BMI) Calculator
+
+<br/>
+Body Mass Index (BMI) Calculator is a shiny application. After you enter your weight and height, this application will calculate your BMI and tell you if you are in good shape or not.
+
+<br/>
+1. The link to this shiny application:
+<a href="https://jenneyliu.shinyapps.io/Project/" target="_blank">BodyMassIndex (BMI) Calculator</a>
+
+<br/>
+2. The link to Supporting Documentation:
+<a href="https://jenneyliu.shinyapps.io/Project/readme.html" target="_blank">Supporting Documentation</a>
+
+<br/>
+<br/>
+<font size="6"> Stay in shape,  stay healthy! </font>
 
 
 

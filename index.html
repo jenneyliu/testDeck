@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Slidify</title>
+  <title>Body Mass Index (BMI) Calculator</title>
   <meta charset="utf-8">
-  <meta name="description" content="Slidify">
+  <meta name="description" content="Body Mass Index (BMI) Calculator">
   <meta name="author" content="Jenny Liu">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,8 +32,8 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Slidify</h1>
-    <h2>Data meets presentation</h2>
+    <h1>Body Mass Index (BMI) Calculator</h1>
+    <h2>A shiny application</h2>
     <p>Jenny Liu<br/>Data Scintist</p>
   </hgroup>
   <article></article>  
@@ -42,15 +42,25 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Read-And-Delete</h2>
-  </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p><br/>
+<br/></p>
+
+<h2><font size="10"> Are you in good shape?  </font></h2>
+
+<p><br/>
+<br/></p>
+
+<p><font size="4.5"> Some most common questions about weight: </font></p>
+
+<p><br/>
+<font size="5"> Should I lose weight? </font></p>
+
+<p><br/>
+<font size="5"> Is my weight ideal? </font></p>
+
+<p><br/>
+<font size="5"> How much should I weigh for my height? </font></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,10 +68,93 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Body Mass Index (BMI)</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p><br/></p>
+
+<h3>What is BMI</h3>
+
+<ol>
+<li>Your BMI is a measure that relates your weight to your height. </li>
+<li>To calculate BMI, divide your weight (kilograms) by the square of your height (meters).</li>
+</ol>
+
+<h3>Interpretation of BMI</h3>
+
+<table style="width:400px; boder:1px; margin-top:0.3cm; padding-top:0.3cm; font-size=4">
+<tr>
+  <td> BMI &#x2264 18.5 </td>
+  <td> Underweight</td>  
+</tr>
+
+<tr>
+  <td>18.5 < BMI &#x2264 25</td>
+  <td> Ideal</td>  
+</tr>
+
+<tr>
+  <td>25 < BMI &#x2264 30 </td>
+  <td> Overweight</td>  
+</tr>
+
+<tr>
+  <td> 30 < BMI </td>
+  <td> Obese</td>  
+</tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>An exmaple</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br/>
+<br/></p>
+
+<p>For example, if your weight is 80 kilograms and your height is 1.8 meters, then</p>
+
+<pre><code class="r">weight &lt;- 80
+height &lt;- 1.8 
+BMI &lt;- weight / (height^2)
+BMI
+</code></pre>
+
+<pre><code>## [1] 24.69
+</code></pre>
+
+<p><br/></p>
+
+<p>Since the BMI &lt; 25, you have ideal weight given the height.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Body Mass Index (BMI) Calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br/>
+Body Mass Index (BMI) Calculator is a shiny application. After you enter your weight and height, this application will calculate your BMI and tell you if you are in good shape or not.</p>
+
+<p><br/>
+1. The link to this shiny application:
+<a href="https://jenneyliu.shinyapps.io/Project/" target="_blank">BodyMassIndex (BMI) Calculator</a></p>
+
+<p><br/>
+2. The link to Supporting Documentation:
+<a href="https://jenneyliu.shinyapps.io/Project/readme.html" target="_blank">Supporting Documentation</a></p>
+
+<p><br/>
+<br/>
+<font size="6"> Stay in shape,  stay healthy! </font></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +165,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title=''>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Body Mass Index (BMI)'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='An exmaple'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Body Mass Index (BMI) Calculator'>
+         4
       </a>
     </li>
   </ul>

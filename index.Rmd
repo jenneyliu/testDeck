@@ -83,22 +83,64 @@ knit        : slidify::knit2slides
 
 ## An example
 
-<br/>
-<br/>
 
-For example, if your weight is 80 kilograms and your height is 1.8 meters, then
-```{r}
-weight <- 80
-height <- 1.8 
-BMI <- weight / (height^2)
-BMI
+
+```{r, echo=FALSE}
+weight <- 80; height <- 1.8; BMI <- weight / (height^2)
+```
+<font size="4">
+For example,  if $weight=80$ kilograms and $height=1.8$ meters, then  $BMI = weight / (height^2) = `r BMI `$
+</font>
+
+```{r results = 'asis', comment = NA, message = F, echo = F, fig.width=5, fig.height=5}
+require(rCharts)
+inShape <- function(bml) {
+      result <- "Ideal"
+      if (bml <= 18.5)
+      {
+            result <- "Underweight"
+      } else if (bml <= 25)
+      {
+            result <- "Ideal"
+      } else if (bml <= 30)
+      {
+            result <- "Overweight"
+      } else 
+      {
+            result <- "Obese"
+      } 
+
+      result <- factor(result, levels = c("Underweight", "Ideal", "Overweight", "Obese"))
+      result
+}
+
+
+bml_plot <- function (bml, bml_one) {
+    bml_levels <- sapply(bml, inShape)
+    bml_cut <- cut(bml, breaks=c(0, 18.5, 25, 30, 100))
+    bml_df <- data.frame(bml_cut=bml_cut, bml_levels=bml_levels )
+    
+    plot(bml_levels, bml, ylab="BMI")
+    points(inShape(bml_one), bml_one, col="darkred", pch=0, cex=3)
+}
+
+
+
+
+
+library(manipulate)
+bml <- seq(1, 50, by=0.1)
+manipulate(bml_plot(bml, x), x = slider(BMI, BMI))
+
+
+
+
+
 ```
 
-
-<br/>
-
-Since the BMI < 25, you have ideal weight given the height.
-
+<font size="4">
+Since the $BMI < 25$,  given the height the weight is <b> ideal </b>.
+</font>
 
 
 
@@ -122,7 +164,11 @@ Body Mass Index (BMI) Calculator is a shiny application. After you enter your we
 <br/>
 <font size="6"> Stay in shape,  stay healthy! </font>
 
+---
 
+
+
+## interactive BMI
 
 
 

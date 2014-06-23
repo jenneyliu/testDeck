@@ -83,27 +83,18 @@ knit        : slidify::knit2slides
 
 ## An example
 
-<br/>
-<br/>
-
-For example, if your weight is 80 kilograms and your height is 1.8 meters, then
-
-```r
-weight <- 80
-height <- 1.8 
-BMI <- weight / (height^2)
-BMI
-```
-
-```
-## [1] 24.69
-```
 
 
-<br/>
 
-Since the BMI < 25, you have ideal weight given the height.
+<font size="4">
+For example,  if $weight=80$ kilograms and $height=1.8$ meters, then  $BMI = weight / (height^2) = 24.6914$
+</font>
 
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
+
+<font size="4">
+Since the $BMI < 25$,  given the height the weight is <b> ideal </b>.
+</font>
 
 
 
@@ -127,7 +118,11 @@ Body Mass Index (BMI) Calculator is a shiny application. After you enter your we
 <br/>
 <font size="6"> Stay in shape,  stay healthy! </font>
 
+---
 
+
+
+## interactive BMI
 
 
 

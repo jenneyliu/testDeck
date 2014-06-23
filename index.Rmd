@@ -26,7 +26,7 @@ knit        : slidify::knit2slides
 <font size="5"> Should I lose weight? </font>
 
 <br/>
-<font size="5"> Is my weight ideal? </font>
+<font size="5"> Is my weight normal? </font>
 
 <br/>
 <font size="5"> How much should I weigh for my height? </font>

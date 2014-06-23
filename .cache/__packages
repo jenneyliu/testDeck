@@ -1,9 +1,3 @@
 base
-datasets
 devtools
-graphics
-grDevices
-methods
 slidify
-stats
-utils

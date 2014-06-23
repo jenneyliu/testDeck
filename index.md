@@ -1,13 +1,15 @@
 ---
-title       : Test deck
-subtitle    : 
-author      : 
-job         : 
-framework   : html5slides        # {io2012, html5slides, shower, dzslides, ...}
+title       : Slidify
+subtitle    : Data meets presentation
+author      : Jenny Liu
+job         : Data Scintist
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
 ---
 
 ## Read-And-Delete
@@ -21,9 +23,5 @@ mode        : selfcontained # {standalone, draft}
 ## Slide 2
 
 
-```r
-plot(1 : 10, 1 : 10)
-```
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
 
